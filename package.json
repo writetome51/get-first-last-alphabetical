@@ -1,0 +1,20 @@
+{
+  "name": "@writetome51/get-first-last-alphabetical",
+  "version": "1.0.0",
+  "description": "2 functions that both sort an array of strings:  one returns the first string in the sorted array, the other returns the last",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "basic",
+    "data-handling",
+    "functions",
+    "classes"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "dependencies": {
+    "@writetome51/alphabetize": "latest"
+  }
+}
