@@ -1,4 +1,4 @@
-import {alphabetize} from '@writetome51/alphabetize/alphabetize';
+import {alphabetize} from '@writetome51/alphabetize';
 
 
 export function getLastAlphabetical(strings): string {
