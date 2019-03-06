@@ -1,10 +1,11 @@
 {
   "name": "@writetome51/get-first-last-alphabetical",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "2 functions that both sort an array of strings:  one returns the first string in the sorted array, the other returns the last",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "keywords": [
     "basic",
@@ -13,8 +14,9 @@
     "classes"
   ],
   "author": "Steve Thompson",
+  "homepage": "https://github.com/writetome51/get-first-last-alphabetical#readme",
   "license": "MIT",
   "dependencies": {
-    "@writetome51/alphabetize": "latest"
+    "@writetome51/alphabetize": "~1.0.5"
   }
 }
