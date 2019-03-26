@@ -16,8 +16,13 @@ let strings: any[] = [
 	'LL Cool J', 'amy', 111, 100
 ];
 
+let stringsCopy = strings;
+
 let first = getFirstAlphabetical(strings);
 let last = getLastAlphabetical(strings);
+
+strings[0] = false;
+console.log(stringsCopy);
 
 console.log(first); // 100
 console.log(last); // zz top
@@ -35,7 +40,7 @@ first = getFirstAlphabetical(strings);
 console.log(first); // []
 
 
-let items = ['', 'a', 'c', 'e', 'g', 'j', 'o', 'r', 'x', 'z', '!'];
+let items: any[] = ['', 'a', 'c', 'e', 'g', 'j', 'o', 'r', 'x', 'z', '!'];
 first = getFirstAlphabetical(items);
 console.log(first); // ''
 
@@ -44,5 +49,29 @@ console.log(last); // 'z'
 
 
 items = ['aa', 'a', 'A', 'AA'];
+console.log(getFirstAlphabetical(items)); // 'A'
+console.log(getLastAlphabetical(items)); // 'aa'
+
+
+items = [0, false, [], {}, ''];
+console.log(getLastAlphabetical(items)); // false
+
+
+items = ['today', null, false, true];
+
 console.log(getFirstAlphabetical(items));
+// -->  false
+
 console.log(getLastAlphabetical(items));
+// --> true
+
+
+items = ['John Adams', 'Ben Franklin', 'William Shakespeare', 'JJ Abrams', 'Bob Newhart',
+	'Walter Cronkite'];
+
+console.log(getFirstAlphabetical(items));
+// -->  'Ben Franklin'
+
+console.log(getLastAlphabetical(items));
+// --> 'William Shakespeare'
+
